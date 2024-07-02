@@ -104,21 +104,13 @@
 </head>
 <body>
     <div class="container">
-        <h1>Registro</h1>
+        <h1>Login</h1>
         <form method="post">
             {% csrf_token %}
             <label for="id_username">{{ form.username.label }}</label>
             {{ form.username }}<br>
             <label for="id_password1">{{ form.password1.label }}</label>
             {{ form.password1 }}<br>
-            <ul>
-                <li>Tu contraseña no puede ser similar a tu otra información personal.</li>
-                <li>Tu contraseña debe contener al menos 8 caracteres.</li>
-                <li>Tu contraseña no puede ser una contraseña comúnmente utilizada.</li>
-                <li>Tu contraseña no puede ser completamente numérica.</li>
-            </ul>
-            <label for="id_password2">{{ form.password2.label }}</label>
-            {{ form.password2 }}<br>
             <a href="{% url 'lista_zapatillas' %}">
                 <button type="button">Registrarse</button>
             </a>

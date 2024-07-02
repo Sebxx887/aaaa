@@ -27,6 +27,10 @@ DEBUG = True
 
 ALLOWED_HOSTS = []
 
+LOGIN_REDIRECT_URL = 'lista_zapatillas'  # Ajusta esto según tu vista principal
+LOGOUT_REDIRECT_URL = 'login'
+
+
 
 INSTALLED_APPS = [
     'django.contrib.admin',
